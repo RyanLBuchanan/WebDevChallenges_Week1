@@ -9,7 +9,7 @@ h1 {
   filter: uppercase;
   box-sizing: border-box;
   padding: 20px;
-  border: 2px solid rgb(241, 117, 0);
+  /* border: 2px solid rgb(241, 117, 0); */
 }
 
 p {
@@ -41,4 +41,16 @@ img {
   margin: 25px;
   padding: 25px;
   border-radius: 50%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  margin: 25px;
+  padding: 5px;
+  border-radius: 5px;
 }
