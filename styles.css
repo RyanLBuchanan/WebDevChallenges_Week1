@@ -3,22 +3,24 @@ body {
 }
 
 h1 {
+  color: white;
+  background-color: rgb(2, 93, 136);
   text-align: center;
   filter: uppercase;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 2px solid rgb(241, 117, 0);
 }
 
 p {
-  font-size: large;
-  box-sizing: border-box;
-  padding: 20px;
-  border: 5px solid rgb(1, 93, 155);
-  margin: 0;
-
+  margin: 25px;
+  padding: 25px;
 }
 
 .hobbies {
- width: 50%;
-  margin: 2em 0;
+  margin: 25px;
+  padding: 25px;
+  width: 50%;
   font-size: large;
 }
 
@@ -33,5 +35,10 @@ p {
   flex-direction: row;
   margin: 2em 0;
   font-size: large;
+}
 
+img {
+  margin: 25px;
+  padding: 25px;
+  border-radius: 50%;
 }
