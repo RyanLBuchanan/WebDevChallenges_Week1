@@ -22,10 +22,12 @@ var alertDirections = document.getElementById("alertDirectionsText");
 //     return listText;
 // }
 
-alertDirections.innerHTML = "<b>Click on the button below to print the alert:" + 
-                            "</b><br><br> The list includes: " + list[0] + ", " 
-                            + list[1] + ", " + list[2] + ", " + list[3] + ", " 
-                            + list[4] + ", " + list[5];
+function updateHTMLList(){
+  alertDirections.innerHTML = "<b>Click on the button below to print the alert:" + 
+                              "</b><br><br> The list includes: " + list;
+}
+
+updateHTMLList();
   
 function alertFunc() {
     alert(list);
@@ -39,6 +41,8 @@ function addToList() {
   list.push(newItemText);
 
   console.log(list);
+  updateHTMLList();
 }
 
 document.getElementById('addToListButton').addEventListener('click', addToList);
+
