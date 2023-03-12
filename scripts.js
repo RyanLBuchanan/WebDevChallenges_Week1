@@ -1,4 +1,4 @@
-// Item to list function
+/* ITEM TO LIST FUNCTION */
 const list = ["Cats", "Astronomy", "Gyms"];
         
 console.log(list);
@@ -12,14 +12,17 @@ myFunc("Islands");
 myFunc("Mathematics");
 myFunc("Diving");
 
-// Alert to print a list
+
+
+// /* ALERT PRINT TO LIST */
 var alertDirections = document.getElementById("alertDirectionsText");
 
-// foreach (item in list)
-//     list = list[item] + ", ";
-//     return list;
+// for (var i = 0; i < list.length; i++) {
+//     let listText = list[item] + ", ".toString();
+//     return listText;
+// }
 
-alertDirections.innerHTML = "<b>Click on the button below to print the alert" + 
+alertDirections.innerHTML = "<b>Click on the button below to print the alert:" + 
                             "</b><br><br> The list includes: " + list[0] + ", " 
                             + list[1] + ", " + list[2] + ", " + list[3] + ", " 
                             + list[4] + ", " + list[5];
@@ -27,3 +30,15 @@ alertDirections.innerHTML = "<b>Click on the button below to print the alert" +
 function alertFunc() {
     alert(list);
 }
+
+
+
+/* TEXT BOX INPUT TO LIST */
+function addToList() {
+  var newItemText = document.getElementById('newItem').value;
+  list.push(newItemText);
+
+  console.log(list);
+}
+
+document.getElementById('addToListButton').addEventListener('click', addToList);
